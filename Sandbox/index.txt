@@ -13,7 +13,7 @@ kindergarten-garden
 largest-series-product
 leap
 linked-list
-luan
+luhn
 matrix
 meetup
 minesweeper
