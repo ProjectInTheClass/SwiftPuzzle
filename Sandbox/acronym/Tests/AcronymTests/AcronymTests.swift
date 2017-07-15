@@ -45,9 +45,9 @@ class AcronymTests: XCTestCase {
     func testAcronymAbbreviateTest6() {
         print("$")
         XCTAssertEqual("CMOS", Acronym.abbreviate("Complementary metal-oxide semiconductor"))
-        print("title:ROR")
-        print("result:\(Acronym.abbreviate("Ruby on Rails"))")
-        print("exp:입력값으로 Ruby on Rails를 받습니다.")
+        print("title:CMOS")
+        print("result:\(Acronym.abbreviate("Complementary metal-oxide semiconductor"))")
+        print("exp:입력값으로 Complementary metal-oxide semiconductor를 받습니다.")
     }
 
     static var allTests: [(String, (AcronymTests) -> () throws -> Void)] {
