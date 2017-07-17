@@ -80,7 +80,7 @@ class BinarySearchTreeTests: XCTestCase {
         XCTAssertEqual([2, 4], four.allData())
         print("title:모든 데이터 출력하기 2")
         print("result:\(BinarySearchTree(4).allData())")
-        print("exp:4의 head node 를 만듭니다. 모든 데이터를 출력하면 4만 나와야 합니다.")
+        print("exp:4의 head node 를 만듭니다. 2 를 넣은 node 를 삽입합니다. 모든 데이터를 출력하면 2, 4가 나와야 합니다.")
     }
 
     func testAllDataForLargerElement() {
@@ -88,6 +88,9 @@ class BinarySearchTreeTests: XCTestCase {
         var four = BinarySearchTree(4)
         four.insert(5)
         XCTAssertEqual([4, 5], four.allData())
+        print("title:모든 데이터 출력하기 3")
+        print("result:\(BinarySearchTree(4).allData())")
+        print("exp:4의 head node 를 만듭니다. 5를 넣은 node 를 삽입합니다. 모든 데이터를 출력하면 4, 5가 나와야 합니다.")
     }
 
     func testAllDataForComplexTree() {
@@ -100,6 +103,9 @@ class BinarySearchTreeTests: XCTestCase {
         four.insert(7)
         four.insert(5)
         XCTAssertEqual([1, 2, 3, 4, 5, 6, 7], four.allData())
+        print("title:모든 데이터 출력하기 4")
+        print("result:\(BinarySearchTree(4).allData())")
+        print("exp:4의 head node 를 만듭니다. 2, 1, 3, 6, 7, 5를 넣은 node 를 차례로 삽입합니다. 모든 데이터를 출력하면 1, 2, 3, 4, 5, 6, 7 이 나와야 합니다.")
     }
 
     static var allTests: [(String, (BinarySearchTreeTests) -> () throws -> Void)] {
