@@ -69,6 +69,10 @@ node 의 데이터를 저장한다.
 
 전달받은 데이터로 새로운 node 를 생성하여 왼쪽 혹은 오른쪽 가지에 연결한다.
 
+    func allData() -> [Int]
+
+삽입한 모든 데이터들을 오름차순으로 정렬된 배열로 반환한다.
+
 ## Source 
 
     class BinarySearchTree {
@@ -83,5 +87,11 @@ node 의 데이터를 저장한다.
 
         func insert(_ data: Int) {
             /* write your code here */
+        }
+
+        func allData() -> [Int] {
+            var result: [Int] = []
+            /* write your code here */
+            return result
         }
     }

@@ -3,11 +3,11 @@
 긴 문자열을 그 이니셜만 모아 두문자어로 만들어주는 클래스를 작성하라.
 예를 들어, 
 
-    "Portable Network Graphics"
+> "Portable Network Graphics"
 
 는,
 
-    "PNG"
+> "PNG"
 
 로 바꾸어 준다.
 
@@ -15,11 +15,11 @@
 
 예를 들어
 
-    "Water-to-Market"
+> "Water-to-Market"
 
 은
 
-    "WTM"
+> "WTM"
 
 이 된다.
 
@@ -35,12 +35,18 @@ source 로 원본 문자열을 전달받고, 두문자어로 축약된 문자열
 
 ## Hint
 
-String 클래스의 component(separatedBy:) 함수를 이용해볼 것.
+String 클래스의 
+
+    component(separatedBy:) 
+
+함수를 이용해볼 것.
 
 ## Source
 
     class Acronym {
         class func abbreviate(_ source:String) -> String {
+            var result: String = ""
             /* write your code here */
+            return result
         }
     }

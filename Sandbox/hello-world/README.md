@@ -1,6 +1,6 @@
 # Hello World
 
-"Hello, World!" 프로그램을 만들어 보자.
+*"Hello, World!"* 프로그램을 만들어 보자.
 
     "Hello, World!" 
 
@@ -41,10 +41,14 @@ name 으로 이름을 전달받으면
     class HelloWorld {
 
         class func hello(_ name: String) -> String {
+            var result = ""
             /* write your code here */
+            return result
         }
 
         class func hello() -> String {
+            var result = ""
             /* write your code here */
+            return result
         }
     }

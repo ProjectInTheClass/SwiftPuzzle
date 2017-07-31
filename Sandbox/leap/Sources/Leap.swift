@@ -5,7 +5,9 @@ class Year {
     
     var isLeapYear: Bool {
         get {
+            var result = false
             /* write your code here */
+            return result
         }
     }
     

@@ -29,18 +29,11 @@ Allergies 클래스를 작성한다. 생성자를 통해 어떤 사람의 알레
 
     init(_ score: Int)
 
-다음 프로퍼티들을 구현한다.
+다음 함수를 구현한다.
 
-    var eggs: Bool
-    var peanuts: Bool
-    var shellfish: Bool
-    var strawberries: Bool
-    var tomatoes: Bool
-    var chocolate: Bool
-    var pollen: Bool
-    var cats: Bool
+    func hasAllergy(_ element: AllergyElement) -> Bool
 
-각 아이템들에 대해 이 사람이 알레르기를 가졌는지 아닌지를 true 혹은 false 로 반환한다.
+전달받은 아이템에 대해 이 사람이 알레르기를 가졌는지 아닌지를 true 혹은 false 로 반환한다.
 
 ## Hint
 
@@ -50,57 +43,26 @@ Allergies 클래스를 작성한다. 생성자를 통해 어떤 사람의 알레
 
     class Allergies {
 
-        var score: Int
+        var score: UInt
 
-        var eggs: Bool {
-            get {
-                /* write your code here */
-            }
-        }
-
-        var peanuts: Bool {
-            get {
-                /* write your code here */
-            }
-        }
-
-        var shellfish: Bool {
-            get {
-                /* write your code here */
-            }
-        }
-
-        var strawberries: Bool {
-            get {
-                /* write your code here */
-            }
-        }
-
-        var tomatoes: Bool {
-            get {
-                /* write your code here */
-            }
-        }
-
-        var chocolate: Bool {
-            get {
-                /* write your code here */
-            }
-        }
-
-        var pollen: Bool {
-            get {
-                /* write your code here */
-            }
-        }
-
-        var cats: Bool {
-            get {
-                /* write your code here */
-            }
-        }
-
-        init(_ score: Int) {
+        init(_ score: UInt) {
             self.score = score
         }
+
+        func hasAllergy(_ element: AllergyElement) -> Bool {
+            var result = false
+            /* write your code here */
+            return result
+        }
+    }
+
+    enum AllergyElement: Int {
+        case eggs = 1
+        case peanuts = 2
+        case shellfish = 4
+        case strawberries = 8
+        case tomatoes = 16
+        case chocolate = 32
+        case pollen = 64
+        case cats = 128
     }

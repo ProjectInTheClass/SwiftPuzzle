@@ -5,19 +5,25 @@ class Squares {
     
     var squareOfSums: Int {
         get {
+            var result = -1
             /* write your code here */
+            return result
         }
     }
     
     var sumOfSquares: Int {
         get {
+            var result = -1
             /* write your code here */
+            return result
         }
     }
     
     var differenceOfSquares: Int {
         get {
+            var result = -1
             /* write your code here */
+            return result
         }
     }
     

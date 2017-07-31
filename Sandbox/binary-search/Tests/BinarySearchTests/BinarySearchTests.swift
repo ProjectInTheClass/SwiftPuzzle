@@ -27,7 +27,7 @@ class BinarySearchTests: XCTestCase {
         print("$")
         XCTAssertNil(try! BinarySearch([1, 3, 6]).searchFor(2))
         print("title:\([1, 3, 6]) 에서 2의 위치")
-        print("result:\(BinarySearch([1, 3, 6]).searchFor(2))")
+        print("result:\(try! BinarySearch([1, 3, 6]).searchFor(2))")
         print("exp:2는 목록에 없으므로 nil 이 결과로 나와야 합니다.")
     }
 

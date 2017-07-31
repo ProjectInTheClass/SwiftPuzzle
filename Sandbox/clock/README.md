@@ -25,11 +25,11 @@ Clock 클래스를 작성한다. 생성자를 통해 더할 시간과 분을 전
 
 다음 함수들을 작성한다.
 
-    func add(minutes: Int)
+    func add(minutes: Int) -> Clock
 
 현재 시간에서 주어진 분 만큼을 더한다.
 
-    func subtract(minutes: Int)
+    func subtract(minutes: Int) -> Clock
 
 현재 시간에서 주어진 분 만큼을 뺀다.
 
@@ -37,14 +37,16 @@ Comparable 프로토콜을 이용하여, 서로 다른 두 Clock 객체를 비�
 
 ## Source
 
-    class Clock: CustomStringConvertable, Compareable {
+    class Clock: CustomStringConvertable, Comparable {
 
         var hours: Int
         var minutes: Int
 
         var description: String {
             get {
+                var result: String = ""
                 /* write your code here */
+                return result
             }
         }
 
@@ -58,19 +60,25 @@ Comparable 프로토콜을 이용하여, 서로 다른 두 Clock 객체를 비�
             self.minutes = minutes
         }
 
-        func add(minutes: Int) {
+        func add(minutes: Int) -> Clock {
             /* write your code here */
+            return self
         }
 
-        func subtract(minutes: Int) {
+        func subtract(minutes: Int) -> Clock {
             /* write your code here */
+            return self
         }
     }
     
     func ==(lhs: Clock, rhs: Clock) -> Bool {
+        var result: Bool = false
         /* write your code here */
+        return result
     }
 
     func <(lhs: Clock, rhs: Clock) -> Bool {
+        var result: Bool = false
         /* write your code here */
+        return result
     }

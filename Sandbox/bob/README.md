@@ -27,6 +27,8 @@ input 으로 전달받은 말에 대해, 주어진 조건에 따라 Bob 이 할 
 
     class Bob {
         class func hey(_ input: String) -> String {
+            var result: String = ""
             /* write your code here */
+            return result
         }
     }
